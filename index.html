@@ -63,17 +63,17 @@
                 <a class="navbar-brand" href="#">LINGAD</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#WhatIDo">What I Do</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li class="active"><a class="#Home">Home</a></li>
+                <li><a class="#About">About</a></li>
+                <li><a class="#WhatIDo">What I Do</a></li>
+                <li><a class="#Contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
 
 
-
+<div id="Home">
     <div class="jumbotron">
 
 
@@ -81,10 +81,11 @@
 
             <h1>Alyssa Lingad</h1>
             <p>Aspiring protector of the internet.</p><br>
-            <p><a class="btn btn-primary btn-lg" href="#About" role="button">READ ON</a></p>
+            <p><div id="read" class="btn btn-primary btn-lg" role="button">READ ON</div></p>
         </div>
     </div>
     </video>
+</div>
 </header>
 
 <div id="About">
@@ -109,9 +110,9 @@
                     <br>
                     <p>
                         I like to look at code from different perspectives and find ways to
-                        break it. I'm observant, analytical, and I strive for nearest
-                        to perfection. My primary goal is to make meaningful impact in
-                        whatever way I can.
+                        break it. I'm observant, analytical, and I strive for near
+                        perfection. My primary goal is to make meaningful impact in
+                        whatever way I can.  (✿◠‿◠)
                     </p>
                     <br>
                     <div class="clickable">
@@ -205,14 +206,14 @@
         <h2>STAY IN TOUCH
             <i class="fa fa-envelope-o"></i>
         </h2>
-        <form class='form-group'
+        <form id='emailForm' class='form-group'
               action="https://formspree.io/alyssalingad@gmail.com"
               method="POST">
-            <input type="text" name="name" class="form-control"
+            <input required type="text" name="name" class="custom form-control"
             placeholder="Name"><br>
-            <input type="email" name="_replyto" class="form-control"
+            <input  required type="email" name="_replyto" class="custom form-control"
             placeholder="Email"><br>
-            <textarea name="text" class="form-control" placeholder="Message"></textarea><br>
+            <textarea required id='emailMsg' name="text" class="custom form-control" placeholder="Message"></textarea><br>
             <div class="clickable">
                 <button type="submit" class="btn btn-default">Submit</button>
             </div>
