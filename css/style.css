@@ -1,3 +1,34 @@
+@media (max-width: 770px) {
+    hr {
+        visibility: hidden;
+        margin: 0px;
+    }
+
+    .btm{
+        padding-top: 20px;
+    }
+
+    #WhatIDo {
+        text-align: center;
+    }
+
+    #About h2, #WhatIDo h2, #Contact h2{
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+
+    #pic {
+        text-align: center;
+    }
+
+}
+
+
+.quote {
+    font-size: 0.90em;
+}
+
 .jumbotron {
     text-align: center;
     background-size: cover;
@@ -11,7 +42,6 @@
 #About .fa, #Contact .fa{
     color: #00C8DC;
 }
-
 
 .navbar {
     cursor: pointer;
@@ -110,31 +140,13 @@ p {
 }
 
 
-#services{
-    background:#fff;
-    color:#999;
-    padding:80px 0;
-}
-
-#services .row.line {
-    height:6px;
-    background:#8aaad9;
-    margin-bottom:24px;
-}
-
-#services .line .spot {
-    margin:-7px auto;
-    display:block;
-    width:20px;
-    height:20px;
-    background:#8aaad9;
-    border:5px solid #fff;
-    border-radius:50%;
-}
 
 #portrait {
     border-radius:50%;
     overflow:hidden;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 .container p {
@@ -161,10 +173,6 @@ p {
     border: 1px solid white;
 }
 
-.form-group {
-    padding-left: 100px;
-    padding-right: 100px;
-}
 
 .clickable {
     text-align: center;
