@@ -1,29 +1,17 @@
-@media (max-width: 770px) {
-    hr {
-        visibility: hidden;
-        margin: 0px;
-    }
-
-    .btm{
-        padding-top: 20px;
-    }
-
-    #WhatIDo {
-        text-align: center;
-    }
-
-    #About h2, #WhatIDo h2, #Contact h2{
-        font-size: 3.5em;
-        text-align: center;
-    }
 
 
-    #pic {
-        text-align: center;
-    }
 
+#footerLinks .name {
+    margin-left: 125px;
 }
 
+.col-sm-2 {
+    margin: 20px;
+}
+
+#Footer a {
+    color: white;
+}
 
 .quote {
     font-size: 0.90em;
@@ -54,7 +42,7 @@
 }
 
 #emailMsg {
-    height: 300px;
+    height: 275px;
 
 }
 
@@ -206,4 +194,38 @@ textarea {
 
 #Contact {
     color: #00D2D4;
+}
 
+@media (max-width: 770px) {
+    hr {
+        visibility: hidden;
+        margin: 0px;
+    }
+
+    .btm{
+        padding-top: 20px;
+    }
+
+    #WhatIDo {
+        text-align: center;
+    }
+
+    #About h2, #WhatIDo h2, #Contact h2{
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+
+    #pic {
+        text-align: center;
+    }
+
+    #Footer {
+        text-align: center;
+    }
+
+    #footerLinks .name {
+        margin: 0px;
+    }
+
+}
