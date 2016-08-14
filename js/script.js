@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-    /* SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/ */
+    /* ================================================
+    SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+    =================================================== */
     $(document).on("scroll", onScroll);
 
     //smoothscroll
@@ -23,9 +25,11 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-    /* END OF SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/ */
-
-
+    /* ================================================
+     END OF SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+     =================================================== */
+    new WOW().init();
+    
     // for read on button
     $("#read").click(function() {
         var element_id = "#About";
@@ -39,7 +43,9 @@ $(document).ready(function () {
 });
 
 
-/* SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/ */
+/* ================================================
+ SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+ =================================================== */
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('.navbar-fixed-top .container-fluid .navbar-right a').each(function () {
@@ -47,10 +53,7 @@ function onScroll(event){
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            console.log('in here');
             $('.navbar-fixed-top .container-fluid .navbar-right ul li').removeClass("active");
-            console.log('cur link:');
-            console.log(currLink);
             currLink.parent().addClass("active");
         }
         else{
@@ -58,7 +61,9 @@ function onScroll(event){
         }
     });
 }
-/* END OF SOURCE */
+/* ================================================
+ SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+ =================================================== */
 
 
 /*

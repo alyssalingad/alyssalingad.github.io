@@ -23,9 +23,24 @@
     color: white;
     width: 100%;
     height: 1000px;
-    background-image: url('../assets/bkgd.jpg');
+    background: rgba(76, 175, 80, 0);
 }
 
+#About video {
+    width:100%;
+    height:100%;
+    object-fit:cover; /* Resize the video to cover parent, like a background-size:cover */
+}
+
+#About #bg {
+    /* The styles for #bg remain the same, you'd just need to add */
+    /* one more, so the video that overflows the #hero is hidden: */
+    overflow:hidden;
+}
+
+#About, #Contact {
+    background-color: white;
+}
 
 #About .fa, #Contact .fa{
     color: #00C8DC;
@@ -199,6 +214,7 @@ textarea {
 #Contact {
     color: #00D2D4;
 }
+
 
 @media (max-width: 770px) {
     hr {
