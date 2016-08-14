@@ -222,6 +222,14 @@ textarea {
         margin: 0px;
     }
 
+    #bg {
+        visibility: hidden;
+    }
+
+    .jumbotron {
+        background-image: url("../assets/bkgd.jpg");
+    }
+
     .btm{
         padding-top: 20px;
     }
