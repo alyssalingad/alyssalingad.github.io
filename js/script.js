@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     /* SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/ */
     $(document).on("scroll", onScroll);
 
@@ -35,14 +34,16 @@ $(document).ready(function () {
             {scrollTop: $(element_id).offset().top}, 'slow');
 
     });
+
+
 });
 
 
 /* SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/ */
 function onScroll(event){
-    console.log('whattt');
     var scrollPos = $(document).scrollTop();
     $('.navbar-fixed-top .container-fluid .navbar-right a').each(function () {
+        event.preventDefault();
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {

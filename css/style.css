@@ -149,6 +149,10 @@ p {
     color: #646666;
 }
 
+#read {
+    font-size: 1em;
+}
+
 .btn-primary, .btn-primary:active {
     background-color: transparent;
     border-radius: 20px;
