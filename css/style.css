@@ -5,6 +5,7 @@
     margin-left: 125px;
 }
 
+
 .col-sm-2 {
     margin: 20px;
 }
@@ -165,7 +166,7 @@ p {
 }
 
 #read {
-    font-size: 1em;
+    font-size: 1.20em;
 }
 
 .btn-primary, .btn-primary:active {
