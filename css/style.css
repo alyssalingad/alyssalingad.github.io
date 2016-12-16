@@ -47,9 +47,6 @@
     color: #00C8DC;
 }
 
-.navbar {
-    cursor: pointer;
-}
 
 .custom {
     height: auto;
@@ -218,17 +215,14 @@ textarea {
 
 
 @media (max-width: 770px) {
-    hr {
-        visibility: hidden;
-        margin: 0px;
-    }
 
-    #bg {
+    #bg, .divider {
         visibility: hidden;
     }
 
     .jumbotron {
         background-image: url("../assets/bkgd.jpg");
+        margin: 0px;
     }
 
     .btm{
@@ -242,6 +236,8 @@ textarea {
     #About h2, #WhatIDo h2, #Contact h2{
         font-size: 3.5em;
         text-align: center;
+        padding-top: .5em;
+        padding-bottom: .5em;
     }
 
 
@@ -255,6 +251,11 @@ textarea {
 
     #footerLinks .name {
         margin: 0px;
+    }
+
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
     }
 
 }
