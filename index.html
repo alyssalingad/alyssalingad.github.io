@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="en-US">
 <head>
 
 	<!-- ==============================================
@@ -256,18 +256,31 @@
             <i class="fa fa-envelope-o"></i>
         </h2>
         <div class="wow animated pulse ">
+
+            <!--
             <form id='emailForm' class='form-group'
                   action="https://formspree.io/contact.alyssalingad@gmail.com"
                   method="POST">
-                <input required type="text" name="name" class="custom form-control"
-                       placeholder="Name"><br>
-                <input  required type="email" name="_replyto" class="custom form-control"
-                        placeholder="Email"><br>
+                <input required type="text" name="name" class="custom form-control" placeholder="Name"><br>
+                <input required type="email" name="_replyto" class="custom form-control" placeholder="Email"><br>
                 <textarea required id='emailMsg' name="text" class="custom form-control" placeholder="Message"></textarea><br>
                 <div class="clickable">
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
             </form>
+            -->
+
+            <form id="emailForm" method="POST" class="form-group">
+                <input type="text" name="name" class="custom form-control" placeholder="Name"><br>
+                <input type="email" name="_replyto" class="custom form-control" placeholder="Email"><br>
+                <input type="hidden" name="_subject" value="Website contact" />
+                <textarea id='emailMsg' name="message" class="custom form-control" placeholder="Message"></textarea><br>
+                <input type="text" name="_gotcha" style="display:none" />
+                <div class="clickable">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
+
         </div>
     </div>
 </div>
@@ -327,6 +340,10 @@ SCRIPTS
   ga('create', 'UA-74242926-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+    var contactform =  document.getElementById('emailForm');
+    contactform.setAttribute('action', '//formspree.io/' + 'contact.alyssalingad' + '@' + 'gmail' + '.' + 'com');
 </script>
 </body>
 
