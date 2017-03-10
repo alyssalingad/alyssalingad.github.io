@@ -1,10 +1,18 @@
+.cd-date {
+    font-size: medium;
+}
 
-
+#WhatIDo h3, #WhatIDo h4, #WhatIDo p{
+    color: black;
+}
 
 #footerLinks .name {
     margin-left: 125px;
 }
 
+body {
+    color: white;
+}
 
 .col-sm-2 {
     margin: 20px;
@@ -23,8 +31,9 @@
     background-size: cover;
     color: white;
     width: 100%;
-    height: 1000px;
-    background: rgba(76, 175, 80, 0);
+    height: 100vh;
+    background: linear-gradient(351deg, #FCB460 20%, #FF9AFB 50%, #9239FF 90%);
+    margin: 0px;
 }
 
 #About video {
@@ -33,18 +42,36 @@
     object-fit:cover; /* Resize the video to cover parent, like a background-size:cover */
 }
 
-#About #bg {
-    /* The styles for #bg remain the same, you'd just need to add */
-    /* one more, so the video that overflows the #hero is hidden: */
+#About p a {
+    color: white;
+    text-decoration: underline;
+}
+
+#About p a:hover {
+    background-color: #FF9AFB;
+    text-decoration: underline;
+}
+
+#About {
     overflow:hidden;
+    background: linear-gradient(351deg, #FCB460 20%, #FCB460 50%, #FCB460 90%);
 }
 
-#About, #Contact {
-    background-color: white;
+#Contact {
+    background: linear-gradient(351deg, #FCB460 5%, #FF9AFB 90%, #FF9AFB  90%);
 }
 
+#WhatIDo {
+      background: linear-gradient(351deg, #FF9AFB 5%, #FF9AFB 5%, #FCB460 90%);
+    color: white;
+}
+
+#Footer {
+    background: #FCB460;
+    color: white;
+}
 #About .fa, #Contact .fa{
-    color: #00C8DC;
+    color: white;
 }
 
 
@@ -55,7 +82,7 @@
 }
 
 #emailMsg {
-    height: 275px;
+    height: 45vh;
 
 }
 
@@ -102,7 +129,7 @@ video {
 }
 
 #heart {
-    color: rgba(0,0,0,0.4);
+    color: white;
 }
 
 #emailForm button {
@@ -111,13 +138,13 @@ video {
 }
 
 .navbar {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .splash {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
-    padding-top: 370px;
+    padding-top: 35vh;
 }
 
 .jumbotron .splash h1 {
@@ -128,42 +155,51 @@ video {
     color: white;
 }
 
-h2 {
-    font-family: 'Raleway', sans-serif;
+h1 {
     font-weight: bold;
-    font-size: 4.5em;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
     padding-top: 50px;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 
 #portrait {
-    border-radius:50%;
+    border-radius:90%;
     overflow:hidden;
     max-width: 100%;
-    height: auto;
+    height: 45vh;
     width: auto\9; /* ie8 */
 }
 
 .container p {
-    font-size: 1.3em;
-    color: #646666;
+    font-size: 1.4em;
+    color: white;
 }
 
 #resumeBtn {
     border-radius: 20px;
-    border: 1px solid #00C8DC;
     font-size: 1.3em;
-    color: #646666;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.fa {
+    margin-right: 10px;
 }
 
 #read {
     font-size: 1.20em;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .btn-primary, .btn-primary:active {
@@ -181,47 +217,44 @@ p {
 
 .clickable {
     text-align: center;
+    background-color: transparent;
 }
 
-#About, #WhatIDo, #Contact {
+#About, #Contact {
+    height: 100vh;
     padding-bottom: 100px;
+}
+
+
+img {
+    image-orientation: from-image;
 }
 
 #pic {
     padding-bottom: 40px;
+    -webkit-filter: opacity(.2);
+    filter: opacity(.8);
 }
 
 textarea {
     resize: vertical;
 }
 
-#WhatIDo, #WhatIDo p {
-    background: #5E90E3;
-    color: white;
-}
-
-#Footer {
-    background: #00D2D4;
-    color: white;
-}
-
 .container {
-    font-family: 'Raleway', sans-serif;
-}
-
-#Contact {
-    color: #00D2D4;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 @media (max-width: 770px) {
-
+    .cd-timeline-img .fa {
+        display: none;
+    }
     #bg, .divider {
         visibility: hidden;
     }
 
     .jumbotron {
-        background-image: url("../assets/bkgd.jpg");
+
         margin: 0px;
     }
 
@@ -240,7 +273,9 @@ textarea {
         padding-bottom: .5em;
     }
 
-
+    #WhatIDo p {
+        font-size: 1.1em;
+    }
     #pic {
         text-align: center;
     }

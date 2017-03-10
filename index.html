@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
 <head>
-
 	<!-- ==============================================
     Title and Meta Tags
     =============================================== -->
@@ -18,6 +17,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/vertical-timeline.css">
 
 	<!-- My added CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -25,46 +25,17 @@
 	<!-- ==============================================
     Fonts
     =============================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<!-- ==============================================
     JS
     =============================================== -->
-
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
 </head>
 
 <body>
 
-<!--
-<div id="nav">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</div>
--->
-
-
-    <!--
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">LINGAD</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#WhatIDo">What I Do</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
--->
 <!-- Fixed navbar -->
+<!--
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -83,48 +54,21 @@
                 <li><a href="#WhatIDo">What I Do</a></li>
                 <li><a href="#Contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </nav>
-<!--
-<div id="Home">
-    <div class="jumbotron">
-
-        <div id="bg">
-            <video autoplay loop>
-                <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
-                <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"/>
-            </video>
-        </div>
-
-        <div class="container splash">
-            <div id="splashObject">
-                <div class="wow animated fadeInDown">
-                    <h1>Alyssa Lingad</h1>
-                </div>
-
-                <div class="wow animated fadeInDown">
-                    <p>Aspiring protector of the internet.</p><br>
-                </div>
-
-            </div>
-
-            <p><div id="read" class="btn btn-primary btn-lg" role="button">READ ON</div></p>
-        </div>
-    </div>
-    </video>
-</div>
 -->
 <header>
 <div id="Home">
     <div class="jumbotron">
+        <!--
         <div id="bg">
             <video autoplay loop muted>
                 <source src="assets/bkgd.webm" type="video/ogg">
                 <source src="assets/bkgd.mp4" type="video/mp4">
             </video>
         </div>
-
+        -->
         <div class="splash">
             <div class="wow animated fadeInDown" data-wow-duration="2.25s">
                 <h1>Alyssa Lingad</h1>
@@ -138,39 +82,35 @@
         </div>
     </div>
 </div>
-
-
-
-
 </header>
 
 <div id="About">
     <div class="container">
-        <h2>WHO AM I?
+        <h2>About
             <i class="fa fa-user"></i>
         </h2>
 
         <div class="row">
-            <div id='pic' class="col-sm-4 col-sm-offset-1 wow animated fadeInLeft">
-                <img id="portrait" src="assets/portrait.jpg" alt="">
+            <div id='pic' class="col-sm-4 col-sm-offset-0 wow animated fadeInLeft">
+                <img id="portrait" src="assets/edited.jpg" alt="">
             </div>
 
             <div id="aboutText" class="wow animated fadeInRight">
-                <div class="col-sm-6 col-sm-offset-1">
+                <div class="col-sm-7 col-sm-offset-1">
                     <p>
-                        I am a 3rd year computer science major at
-                        <b>University of California, Irvine</b>. In my free time, I enjoy learning
-                        about new technologies, playing League of Legends when I should be sleeping, and editing this
-                        very website until it fits my standards of the day. I'm interested in <b>network systems</b>, <b>web dev</b>, and <b>automation</b>.
+                        I am a pursuing a B.S. in Computer Science with a specialization in information retrieval
+                        at <a href="https://uci.edu/about/index.php" target="_blank">University of California, Irvine</a>
+                        and expecting to graduate June 2018.
+                        I'm interested in big data, web dev, and security.
+                        <br><br>
+                        Aside from being a full-time student, I am a facilitator for <a href="https://girlswhocode.com/about-us/" target="_blank">Girls Who Code</a>,
+                        Student Events Chair of the <a href="https://student-council.ics.uci.edu/" target="_blank">Information & Computer Sciences Student Council</a>,
+                        and a Software Developer at <a href="https://ce.uci.edu/about/" target="_blank">UCI Division of Continuing Education</a>.
+                        <br><br>
+                        My goal is to make meaningful impact in whatever way I can.
+                    </p>
 
-                    </p>
-                    <br>
-                    <p>
-                        I like to look at code from different perspectives and find ways to
-                        break it. I'm observant, analytical, and I strive for near
-                        perfection. My goal is to make meaningful impact in
-                        whatever way I can.
-                    </p>
+
                     <br>
                     <div class="clickable">
                         <a id="resumeBtn" class="btn btn-primary btn-lg" target="_blank" href="assets/Alyssa_Lingad_resume.pdf" role="button">VIEW MY RESUME</a>
@@ -183,11 +123,100 @@
 
 <div id="WhatIDo">
     <div class="container">
-        <h2>WHAT I DO
-            <i id='heart' class="fa fa-heart-o"></i>
+        <h2>Experiences
+
         </h2>
 
+        <!-- SOURCE: http://codepen.io/codyhouse/pen/FdkEf -->
+        <section id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <i class="fa fa-female fa-2x" aria-hidden="true"></i>
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content wow animated fadeInRight">
+                    <h3>Girls Who Code</h3>
+                    <h4>Woodbridge High School – Irvine, CA </h4>
+                    <p>
+                        Designs lesson plans to teach high school girls core programming fundamentals.
+                        Demonstrates to students how computer science is applicable to a variety of disciplines.
+                        Creates and grades assignments to ensure understanding of taught concepts.
+                    </p>
 
+                    <!--<a href="#0" class="cd-read-more">Read more</a>-->
+                    <span class="cd-date">Oct 2016-Present</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content wow animated fadeInLeft">
+                    <h3>Student Events Chair</h3>
+                    <h4>UCI – Irvine, CA </h4>
+                    <p>
+                        Responsible for handling logistics, planning, marketing, and executing all club events.
+                        Collaborates with other computer science clubs to strengthen the ties between the ICS community.
+                        Hosts socials, workshops, and info sessions to better ICS students academically, professionally, and socially.
+                    </p>
+                    <span class="cd-date">June 2016-Present</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <i class="fa fa-code fa-2x" aria-hidden="true"></i>                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content wow animated fadeInRight">
+                    <h3>Software Developer</h3>
+                    <h4>UCI Division of Continuing Education – Irvine, CA </h4>
+                    <p>
+                        Wrote multiple scripts in Python to automate the editing of over 2,000 HTML files.
+                        Refactored the database for UCI’s OpenChem web application to support more learning materials.
+                        Improved the search feature by reducing time complexity and adding a rank system.
+                    </p>
+                    <p>
+                        Technologies used: HTML5, CSS, Angular.js, Bootstrap, MySQL, PHP, Laravel, Python
+                    </p>
+                    <span class="cd-date">May 2016-Present</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <i class="fa fa-code fa-2x" aria-hidden="true"></i>                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content wow animated fadeInLeft">
+                    <h3>Web Development Intern</h3>
+                    <h4>The Portal – Irvine, CA </h4>
+                    <p>
+                        Trained and collaborated with a team using agile methodologies to develop web applications.
+                        Used various web technologies from front-end web development to back-end web development.
+                    </p>
+                    <p>
+                        Technologies used: HTML5 CSS, JavaScript, jQuery, Node.js, MongoDB
+                    </p>
+                    <span class="cd-date">Feb 2016-May 2016</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content wow animated fadeInRight">
+                    <h3>Python Lab Tutor</h3>
+                    <h4>UCI – Irvine, CA </h4>
+                    <p>
+                        Demonstrated programming concepts to a lab of 40+ students for 6 hours per week.
+                        Guided students learning the basics and fundamentals of Python by helping find bugs and answering questions.
+                        Received a 9.0/10.0 score on the end-of-quarter evaluation on effectiveness of communicating concepts.
+                    </p>
+                    <span class="cd-date">Sept 2015-Dec 2015</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+        </section> <!-- cd-timeline -->
+        <!-- END SOURCE: http://codepen.io/codyhouse/pen/FdkEf -->
+
+<!--
         <div class="row wow animated fadeInRight" data-wow-duration="1.5s">
             <div class="col-md-3 text-center">
                 <h3>EVENT-PLANNING</h3>
@@ -214,7 +243,7 @@
                     Shoutout to the Yelp creators.
                 </p>
             </div>
-        </div><!--End row (top) -->
+        </div>
 
         <hr class="divider">
 
@@ -243,33 +272,18 @@
                     <i class="quote">Where there's a will, there's a way.</i>
                 </p>
             </div>
-        </div><!--End row (bottom)-->
-
-
+        </div>
+-->
 
     </div>
 </div>
 
 <div id="Contact">
     <div class="container">
-        <h2>STAY IN TOUCH
+        <h2>Stay in Touch
             <i class="fa fa-envelope-o"></i>
         </h2>
         <div class="wow animated pulse ">
-
-            <!--
-            <form id='emailForm' class='form-group'
-                  action="https://formspree.io/contact.alyssalingad@gmail.com"
-                  method="POST">
-                <input required type="text" name="name" class="custom form-control" placeholder="Name"><br>
-                <input required type="email" name="_replyto" class="custom form-control" placeholder="Email"><br>
-                <textarea required id='emailMsg' name="text" class="custom form-control" placeholder="Message"></textarea><br>
-                <div class="clickable">
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-            </form>
-            -->
-
             <form id="emailForm" method="POST" class="form-group">
                 <input type="text" name="name" class="custom form-control" placeholder="Name"><br>
                 <input type="email" name="_replyto" class="custom form-control" placeholder="Email"><br>
@@ -306,7 +320,7 @@
                 <hr>
                 <h4> ABOUT  </h4> <br>
                 alyssalingad@gmail.com <br><br>
-                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
                   Orange County, CA
             </div>
 
@@ -315,6 +329,9 @@
                 <h4> SOCIAL </h4> <br>
                 <a href="https://www.linkedin.com/in/alyssalingad" target="_blank">
                     <i class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/alyssalingad" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/alyssa_linga_d" target_blank>
+                    <i class="fa fa-twitter fa-2x" href="https://twitter.com/alyssa_linga_d" aria-hidden="true"></i>
                 </a>
             </div>
 
@@ -340,8 +357,7 @@ SCRIPTS
   ga('create', 'UA-74242926-1', 'auto');
   ga('send', 'pageview');
 
-</script>
-<script>
+
     var contactform =  document.getElementById('emailForm');
     contactform.setAttribute('action', '//formspree.io/' + 'contact.alyssalingad' + '@' + 'gmail' + '.' + 'com');
 </script>

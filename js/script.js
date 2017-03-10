@@ -28,12 +28,12 @@ $(document).ready(function () {
     /* ================================================
      END OF SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/
      =================================================== */
+
     new WOW().init();
     
     // for read on button
     $("#read").click(function() {
         var element_id = "#About";
-        console.log('clicked abouttttttttttttttt');
         $('html,body').animate(
             {scrollTop: $(element_id).offset().top}, 'slow');
 
@@ -62,3 +62,6 @@ function onScroll(event){
         }
     });
 }
+/* ================================================
+ END OF SOURCE: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+ =================================================== */
